@@ -1,0 +1,14 @@
+- Javadoc processes annotations in special /**...*/ comments preceeding the declaration of classes and methods
+    - @author - the class' author (Personal Thought: can use this to highlight which group member worked on what)
+    - @version - the version of the class
+    - @param - information about a method's parameters (and pre-conditions)
+    - @return - the information about a method's return value (and post-conditions)
+    - @throws - which exceptions a method may throw
+    - @depreciated - alerts the reader to the fact that this class or method is outdated (and should indicate which new class or method should be used instead)
+    - @see - points the reader to another relevant class
+
+- Designing subtypes
+    - Well-designed subtypes should obey the substitution principle: Subtypes should be usable by just following the supertype's specification
+        - Signature rule - Subtypes must have signature-compatible methods for all the supertype's methods
+        - Method's rule - Calls to subtype methods must "behave like" the corresponding supertype methods
+        - Properties rule - The subtype must preserve all of the provable properties

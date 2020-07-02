@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ControlPanel.EventEditor">
+  <grid id="280c4" binding="main_Panel" layout-manager="GridLayoutManager" row-count="4" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="4" left="4" bottom="4" right="4"/>
+    <constraints>
+      <xy x="5" y="5" width="587" height="275"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="e2e43" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="true" hgap="-1" vgap="-1">
+        <margin top="4" left="4" bottom="4" right="4"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none" title="Configure Display Time"/>
+        <children>
+          <component id="df82" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Start Time:"/>
+            </properties>
+          </component>
+          <component id="8a05f" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Duration:"/>
+            </properties>
+          </component>
+          <component id="9501" class="javax.swing.JSpinner" binding="duration_Spinner">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="100" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <toolTipText value="Pick the duration that the billboard will show for, in minutes"/>
+            </properties>
+          </component>
+          <component id="a0de8" class="javax.swing.JTextField" binding="startDate_TextField">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="100" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="2"/>
+              <text value="05/06/2001"/>
+              <toolTipText value="DD/MM/YYYY"/>
+            </properties>
+          </component>
+          <component id="103dd" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Start Date:"/>
+            </properties>
+          </component>
+          <component id="7b40c" class="javax.swing.JTextField" binding="startTime_TextField">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="100" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="12:23 am"/>
+              <toolTipText value="MM:HH (am/pm)"/>
+            </properties>
+          </component>
+          <component id="f39a3" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font/>
+              <horizontalAlignment value="4"/>
+              <text value="(Minutes)"/>
+              <toolTipText value="Hover your cursor over the date / time fields to see their format"/>
+            </properties>
+          </component>
+          <component id="29740" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <enabled value="false"/>
+              <font style="2"/>
+              <text value="Hover cursor for formatting"/>
+              <toolTipText value="Hover your cursor over the date / time fields to see their format"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="2b2c5" layout-manager="GridLayoutManager" row-count="2" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="2" left="2" bottom="2" right="2"/>
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none" title="Configure Looping Properties"/>
+        <children>
+          <component id="47af9" class="javax.swing.JSpinner" binding="loopWeeks_Spinner">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <minimum-size width="60" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <toolTipText value="Weeks"/>
+            </properties>
+          </component>
+          <component id="8e3b4" class="javax.swing.JSpinner" binding="loopDays_Spinner">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <minimum-size width="60" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <toolTipText value="Days"/>
+            </properties>
+          </component>
+          <component id="f5114" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Weeks"/>
+            </properties>
+          </component>
+          <component id="3123e" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Days"/>
+            </properties>
+          </component>
+          <component id="10090" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Hours"/>
+            </properties>
+          </component>
+          <component id="5ce2b" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Minutes"/>
+            </properties>
+          </component>
+          <component id="ac167" class="javax.swing.JSpinner" binding="loopMinutes_Spinner">
+            <constraints>
+              <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <minimum-size width="60" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <toolTipText value="Minutes"/>
+            </properties>
+          </component>
+          <component id="f9a28" class="javax.swing.JSpinner" binding="loopHours_spinner">
+            <constraints>
+              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <minimum-size width="60" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <toolTipText value="Hours"/>
+            </properties>
+          </component>
+          <component id="2f250" class="javax.swing.JCheckBox" binding="enableLooping_ChkBox">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Enable looping"/>
+              <toolTipText value="Check the box if you want this billboard to repeat at your desired interval"/>
+            </properties>
+          </component>
+          <component id="b5fb8" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Loop interval:"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="b0a7c" class="javax.swing.JButton" binding="cancel_Button">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Cancel"/>
+        </properties>
+      </component>
+      <component id="7a45d" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Select a billboard to schedule"/>
+        </properties>
+      </component>
+      <component id="24dad" class="javax.swing.JButton" binding="ok_Button">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <text value="Ok"/>
+        </properties>
+      </component>
+      <component id="e56d9" class="javax.swing.JComboBox" binding="billboardSelector_ComboBox">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Select a billboard..."/>
+          </model>
+          <toolTipText value="Pick which billboard to make from the list of available billboards"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

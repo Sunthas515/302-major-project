@@ -1,0 +1,22 @@
+- Collections are contained in the java.util package
+	- Created using syntax
+        - Collection<E> c = new Collection<E>()
+		- import java.util.ArrayList;
+			var c = new ArrayList<String>();
+			c.add("a");
+			c.add("b");
+			var ar = c.toArray(new String[0]);
+			for (String str : ar) {
+				System.out.println(str);
+			}
+			
+- Collections and Arrays
+	- Collections support iterators, arrays do not
+	- Collections can grow in size at runtime; arrays cannot 
+		- ArrayList can be used exactly the same as an array, although it uses more processing power (Personal Thought: so depending on implementation may want to use ArrayLists)
+		- ArrayLists may use up to 4x as much cpu and memory
+	- Collections only store objects 
+
+- Vectors are not recommended moving forward (depreciated syntax) -> Better to use ArrayLists (have same functionality)
+
+- Dictionaries are referred to as Maps
